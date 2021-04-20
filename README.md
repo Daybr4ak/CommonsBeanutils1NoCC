@@ -1,0 +1,2 @@
+# CommonsBeanutils1NoCC
+CommonsBeanutils1 去除commons-collections依赖
