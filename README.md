@@ -1,8 +1,14 @@
 # CommonsBeanutils1NoCC
 CommonsBeanutils1 去除commons-collections依赖
 
+# 原理
+
+[p牛博客](https://www.leavesongs.com/PENETRATION/commons-beanutils-without-commons-collections.html)
+主要是因为
+Apache Commons Beanutils 在初始化BeanComparator类的时候 使用了org.apache.commons.collections.comparators.ComparableComparator.getInstance()方法，用到了commons-collections，可以通过在初始化的时候传入Comparator去替换掉commons-collection下的comparators使用而避免commons-collections的依赖。
+
+# poc
 p牛的博客中提供了两种方法
-https://www.leavesongs.com/PENETRATION/commons-beanutils-without-commons-collections.html 
 
 1、使用java.lang.CaseInsensitiveComparator
 
